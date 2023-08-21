@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl lg:text-2xl py-4;
+  }
+  p {
+    @apply text-[#212c4fb2];
+  }
+  /* ... */
+}
+.text-secondary {
+  @apply text-[#05bb75];
+}
+.shadow-primary {
+  @apply shadow-[0_3px_10px_rgb(0,0,0,0.2)];
+}
+.nav-link {
+  @apply block py-2 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent;
+}
+.btn-primary {
+  @apply bg-[#f37821] py-2 px-8 rounded-full text-white hover:bg-white hover:text-black border-2 hover:border-2 hover:border-[#f37821];
+}
+.owl-stage {
+  @apply w-full h-full flex items-center;
+}
+.footer-bg {
+  background-image: url("../src/img/Union-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dropdownMenu {
+  position: relative;
+  transform: translate(0px, 0px);
+}
